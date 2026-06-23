@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rádio RB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">
+          <img src="./assets/logoRB.png" alt="Rádio RB" class="logo-img" />
+          <div class="logo-text">Rádio RB</div>
+        </div>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#inicio" class="nav-link">Início</a>
+          <a href="#programacao" class="nav-link">Programação</a>
+          <a href="#noticias" class="nav-link">Notícias</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+
+        <button class="listen-btn" type="button">OUÇA AO VIVO</button>
+
+        <button class="hamburger" type="button" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="header-bottom-border" aria-hidden="true"></div>
+
+      <div class="mobile-nav" aria-hidden="true">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#programacao" class="nav-link">Programação</a>
+        <a href="#noticias" class="nav-link">Notícias</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <button class="listen-btn listen-btn--mobile" type="button">
+          OUÇA AO VIVO
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-left">
+            <div class="hero-pill">RÁDIO RB</div>
+            <h1 class="hero-title">
+              A trilha sonora<br />de
+              <span class="hero-accent">Ponta Grossa</span>
+            </h1>
+            <p class="hero-desc">
+              Uma programação feita para a cidade, com notícias, música e
+              momentos que conectam você ao que importa.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="button">OUVIR AGORA</button>
+              <button class="btn btn-secondary" type="button">
+                CONHEÇA A PROGRAMAÇÃO
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-bg" role="img" aria-label="Estúdio de rádio">
+              <div class="hero-bg-overlay"></div>
+            </div>
+
+            <aside class="player-card" aria-label="Player ao vivo">
+              <div class="player-top">
+                <div class="live-badge">
+                  <span class="dot" aria-hidden="true"></span>
+                  LIVE
+                </div>
+                <div class="player-logo" aria-hidden="true">
+                  <div class="player-logo-mark"></div>
+                  <div class="player-logo-txt">RB</div>
+                </div>
+              </div>
+
+              <div class="player-station">Rádio RB</div>
+              <div class="player-location">Ponta Grossa - PR</div>
+
+              <div class="player-now">Tocando agora</div>
+              <div class="player-music">Música ao vivo (título)</div>
+
+              <div class="volume-row">
+                <div class="volume-label">Volume</div>
+                <input
+                  class="volume"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="70"
+                  aria-label="Volume"
+                />
+              </div>
+
+              <div class="player-live-indicator">
+                <span class="live-bars" aria-hidden="true"></span>
+                LIVE
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Estatísticas">
+        <div class="container">
+          <div class="stats-card">
+            <div class="stat">
+              <span class="stat-value">24H</span>
+              <span class="stat-title">NO AR</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat-value">10K+</span>
+              <span class="stat-title">OUVINTES</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-title">ONLINE</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat-value">7 DIAS</span>
+              <span class="stat-title">PROGRAMAÇÃO</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programacao" class="programming">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-title">PROGRAMAÇÃO</div>
+            <div class="section-sub">Nossos Programas</div>
+          </div>
+          <div class="section-actions">
+            <button class="section-link-btn" type="button">
+              VER TODA PROGRAMAÇÃO
+            </button>
+          </div>
+
+          <div class="program-cards" role="list">
+            <article class="program-card" role="listitem">
+              <div class="program-time">06h - 10h</div>
+              <div class="program-name">Manhã RB</div>
+            </article>
+            <article class="program-card" role="listitem">
+              <div class="program-time">10h - 14h</div>
+              <div class="program-name">Hits da Tarde</div>
+            </article>
+            <article class="program-card" role="listitem">
+              <div class="program-time">14h - 18h</div>
+              <div class="program-name">Conexão RB</div>
+            </article>
+            <article class="program-card" role="listitem">
+              <div class="program-time">18h - 22h</div>
+              <div class="program-name">Clássicos RB</div>
+            </article>
+            <article class="program-card" role="listitem">
+              <div class="program-time">22h - 00h</div>
+              <div class="program-name">Night Session</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lower-grid" aria-label="Conteúdo principal">
+        <div class="container">
+          <div class="grid-2x2">
+            <div class="grid-card grid-card--high">
+              <div class="grid-card-title">DESTAQUES</div>
+              <div
+                class="grid-card-media grid-media-news"
+                aria-hidden="true"
+              ></div>
+              <div class="grid-card-headline">Notícias da RB</div>
+              <div class="grid-card-date">10/05/2026</div>
+            </div>
+
+            <div class="grid-card grid-card--high">
+              <div class="grid-card-title">BAIXE NOSSOS APPS</div>
+              <div class="app-icons" aria-label="Apps">
+                <div class="app-icon">Android</div>
+                <div class="app-icon">iPhone</div>
+                <div class="app-icon">Alexa</div>
+                <div class="app-icon">Navegador</div>
+              </div>
+            </div>
+
+            <div id="sobre" class="grid-card">
+              <div class="grid-card-title">SOBRE A RÁDIO</div>
+              <p class="grid-card-text">
+                Somos a Rádio RB e levamos até você a melhor trilha sonora de
+                Ponta Grossa.
+              </p>
+              <button class="btn btn-secondary btn-block" type="button">
+                SAIBA MAIS
+              </button>
+            </div>
+
+            <div id="contato" class="grid-card">
+              <div class="grid-card-title">SIGA A RB</div>
+              <div class="social-icons" aria-label="Redes sociais">
+                <a class="social-icon" href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a class="social-icon" href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a class="social-icon" href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a class="social-icon" href="#">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="footer-logo-text">Rádio RB</div>
+        </div>
+
+        <div class="footer-contact">
+          <div class="footer-contact-line">
+            <span class="muted">Contato</span>
+          </div>
+          <div class="footer-contact-line">(42) 0000-0000</div>
+          <div class="footer-contact-line">contato@radiorb.com</div>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#inicio" class="nav-link nav-link--footer">Início</a>
+          <a href="#programacao" class="nav-link nav-link--footer"
+            >Programação</a
+          >
+          <a href="#noticias" class="nav-link nav-link--footer">Notícias</a>
+          <a href="#sobre" class="nav-link nav-link--footer">Sobre</a>
+          <a href="#contato" class="nav-link nav-link--footer">Contato</a>
+        </div>
+
+        <div class="footer-social">
+          <a class="social-icon social-icon--footer" href="#">Instagram</a>
+          <a class="social-icon social-icon--footer" href="#">Facebook</a>
+          <a class="social-icon social-icon--footer" href="#">YouTube</a>
+        </div>
+      </div>
+
+      <div class="copyright-bar">
+        <div class="container copyright-inner">
+          <div>© 2026 Rádio RB. Todos os direitos reservados.</div>
+        </div>
+      </div>
+
+      <div class="footer-purple-strip" aria-hidden="true"></div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
