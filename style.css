@@ -34,9 +34,65 @@ body {
   margin: 0 auto;
 }
 
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.header-inner,
+.hero {
+  position: relative;
+  z-index: 2;
+}
+
+.hero {
+  padding: 80px 0 120px;
+
+  
+
+  background-image:
+    linear-gradient(
+      90deg,
+      #000 0%,
+      rgba(0,0,0,.95) 20%,
+      rgba(0,0,0,.75) 40%,
+      rgba(0,0,0,.35) 70%,
+      transparent 100%
+    ),
+    url("assets/estudioRB.png");
+
+  border-radius: 20px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .site-header {
-  background: transparent;
-  padding-top: 16px;
+  padding-top: 20px;
+}
+.hero-header {
+  position: relative;
+  min-height: 560px;
+}
+
+.hero-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      transparent 55%,
+      rgba(0,0,0,.35) 75%,
+      rgba(0,0,0,.75) 100%
+    );
+
+  pointer-events: none;
+  z-index: 1;
 }
 .header-inner {
   width: min(1180px, calc(100% - 40px));
@@ -46,6 +102,7 @@ body {
   justify-content: space-between;
   gap: 16px;
   position: relative;
+  z-index: 10;
 }
 .logo {
   display: flex;
@@ -70,7 +127,14 @@ body {
 }
 .logo-text {
   font-weight: 700;
+  font-size: 38px;
+  font-family: "Archivo Black", sans-serif;
   letter-spacing: 0.2px;
+
+  /* Efeito Fade de Branco para Roxo */
+  background: linear-gradient(to right, var(--white), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav {
@@ -167,9 +231,6 @@ body {
   margin-top: 8px;
 }
 
-.hero {
-  padding: 36px 0 22px;
-}
 .hero-inner {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -203,9 +264,7 @@ body {
   z-index: 0;
 }
 
-.player-card {
-  z-index: 2;
-}
+
 
 .hero-left {
   padding-top: 22px;
@@ -222,9 +281,10 @@ body {
 }
 .hero-title {
   margin: 18px 0 14px;
-  font-size: 44px;
-  line-height: 1.06;
-  font-weight: 800;
+
+  font-size: 72px;
+  line-height: 1;
+  max-width: 650px;
 }
 .hero-accent {
   color: var(--purple2);
@@ -266,27 +326,15 @@ body {
 .btn-block {
   width: 100%;
 }
-
 .hero-right {
   position: relative;
-  min-height: 420px;
+  min-height: 600px;
 }
+
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(
-      1200px 600px at 20% 20%,
-      rgba(155, 61, 255, 0.25),
-      transparent 55%
-    ),
-    linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0) 35%
-    ),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=60");
+  display: none;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -309,10 +357,14 @@ body {
 }
 
 .player-card {
+  width: 420px;
   position: absolute;
-  right: 26px;
-  top: 48%;
   transform: translateY(-50%);
+  right: 40px;
+  top: 240px;
+
+  width: 340px;
+  z-index: 5;
 
   width: 340px;
   padding: 18px;
@@ -859,4 +911,41 @@ body {
   box-shadow:
     0 10px 25px rgba(155, 61, 255, 0.35),
     0 0 20px rgba(177, 76, 255, 0.2);
+}
+
+
+.hero-divider {
+  position: relative;
+  height: 80px;
+  margin-top: -40px;
+  z-index: 2;
+}
+
+.hero-divider::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 85%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #9b3dff 20%,
+    #ffffff 50%,
+    #9b3dff 80%,
+    transparent
+  );
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 5px #9b3dff,
+    0 0 15px #9b3dff,
+    0 0 30px rgba(155, 61, 255, 0.8),
+    0 0 60px rgba(155, 61, 255, 0.4);
 }
