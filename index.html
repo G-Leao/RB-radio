@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Italiana&family=Italianno&family=Saira:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,7 +25,10 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header hero-header">
+      <div class="hero-overlay"></div>
+      
+      
       <div class="header-inner">
         <div class="logo">
           <img src="./assets/logoRB.png" alt="Rádio RB" class="logo-img" />
@@ -51,10 +61,8 @@
           OUÇA AO VIVO
         </button>
       </div>
-    </header>
 
-    <main>
-      <section id="inicio" class="hero">
+      <div id="inicio" class="hero">
         <div class="container hero-inner">
           <div class="hero-left">
             <div class="hero-pill">RÁDIO RB</div>
@@ -109,6 +117,8 @@
                 />
               </div>
 
+              
+
               <div class="player-live-indicator">
                 <span class="live-bars" aria-hidden="true"></span>
                 LIVE
@@ -116,8 +126,12 @@
             </aside>
           </div>
         </div>
-      </section>
+      </div>
+    </header>
 
+    <div class="hero-divider"></div>
+
+    <main>
       <section class="stats" aria-label="Estatísticas">
         <div class="container">
           <div class="stats-card">
@@ -240,6 +254,7 @@
       </section>
     </main>
 
+    
     <footer class="site-footer" id="footer">
       <div class="container footer-inner">
         <div class="footer-logo">
@@ -280,6 +295,7 @@
 
       <div class="footer-purple-strip" aria-hidden="true"></div>
     </footer>
+    
 
     <script src="./script.js"></script>
   </body>
