@@ -27,6 +27,26 @@
   <body>
     <header class="site-header hero-header">
       <div class="hero-overlay"></div>
+      <div class="top-ticker">
+        <div class="ticker-track">
+          <span class="status-live">
+            <i class="fa-solid fa-circle"></i>
+            RÁDIO RB AO VIVO
+          </span>
+
+          <span>•</span>
+
+          <span>Ouça nossa programação 24 horas</span>
+
+          <span>•</span>
+
+          <span>Siga nossas redes sociais</span>
+
+          <span>•</span>
+
+          <span>Entre em contato pelo WhatsApp</span>
+        </div>
+      </div>
 
       <div class="header-inner">
         <div class="logo">
@@ -49,6 +69,46 @@
         </button>
       </div>
       <div class="header-bottom-border" aria-hidden="true"></div>
+      <div class="live-strip">
+        <div class="live-item">
+          <span class="live-dot"></span>
+
+          <div>
+            <strong>TRANSMISSÃO AO VIVO</strong>
+
+            <span>Estamos online agora</span>
+          </div>
+        </div>
+
+        <div class="live-item">
+          <span class="live-dot"></span>
+
+          <div>
+            <strong>NO AR AGORA</strong>
+            <span>Jornal da Manhã • 08h às 10h</span>
+          </div>
+        </div>
+
+        <div class="equalizer">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="listeners">
+          <i class="fa-solid fa-users"></i>
+
+          <div>
+            <strong>Rádio</strong>
+            <span>100% digital</span>
+          </div>
+        </div>
+      </div>
 
       <div class="mobile-nav" aria-hidden="true">
         <a href="#inicio" class="nav-link">Início</a>
@@ -84,46 +144,53 @@
           <div class="hero-right">
             <div class="hero-bg" role="img" aria-label="Estúdio de rádio">
               <div class="hero-bg-overlay"></div>
+              <div class="vinyl">
+                <div class="vinyl-center"></div>
+              </div>
             </div>
 
             <aside class="player-card" aria-label="Player ao vivo">
-              <div class="player-top">
-                <div class="live-badge">
-                  <span class="dot" aria-hidden="true"></span>
-                  LIVE
-                </div>
-                <div class="player-logo" aria-hidden="true">
-                  <div class="player-logo-mark">
-                    <img
-                      src="assets/logoRB.png"
-                      alt="Rádio RB"
-                      class="player-logo-img"
-                    />
+              <div class="player-card-inner">
+                <div class="player-top">
+                  <div class="live-badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    LIVE
+                  </div>
+                  <div class="player-logo" aria-hidden="true">
+                    <div class="player-logo-mark">
+                      <img
+                        src="assets/logoRB.png"
+                        alt="Rádio RB"
+                        class="player-logo-img"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="player-station">Rádio RB</div>
-              <div class="player-location">Ponta Grossa - PR</div>
+                <div class="player-now">TRANSMISSÃO</div>
 
-              <div class="player-now">Tocando agora</div>
-              <div class="player-music">Música ao vivo (título)</div>
+                <div class="player-music">Rádio RB</div>
 
-              <div class="volume-row">
-                <div class="volume-label">Volume</div>
-                <input
-                  class="volume"
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="70"
-                  aria-label="Volume"
-                />
-              </div>
+                <div class="player-song">
+                  Música • Informação • Entretenimento
+                </div>
 
-              <div class="player-live-indicator">
-                <span class="live-bars" aria-hidden="true"></span>
-                LIVE
+                <div class="player-status">
+                  <i class="fa-solid fa-circle"></i>
+
+                  AO VIVO
+                </div>
+
+                <div class="player-live-indicator">
+                  <div class="live-bars" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  LIVE
+                </div>
               </div>
             </aside>
           </div>
